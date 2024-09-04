@@ -60,5 +60,6 @@ def get_all_nfl_players():
     url = "https://api.sleeper.app/v1/players/nfl"
     return fetch_data(url)
 
-if __name__ == '__main__':
+if __name__ == "sleeper":
     app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
+
